@@ -28,10 +28,10 @@ function App() {
     <div className="app-container">
       <h1 className="app-title">Best Quote Generator</h1>
       <div className="quote-wrapper">
-        <p className='quote-content'>{quote.content}</p>
+        <p className='quote-content'> {quote.content}</p>
         <span className='quote-author'>{quote.author}</span>
       </div>
-      <button onClick={generateQuote}>generate</button>
+      <button className='generate-button' onClick={generateQuote}>Get Random Quote</button>
     </div>
   );
 }

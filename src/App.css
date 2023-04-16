@@ -14,14 +14,44 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #57cc99;
 }
 
 .app-container {
-  box-shadow: 0px 0px 2px 2px #32323232;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  padding: 12px;
+  padding: 20px 25px;
+  width: 100vw;
+  max-width: 600px;
+  background-color: white;
+}
+
+.app-title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.quote-content{
+  margin-bottom: 10px;
+  border-left: 3px solid rgba(0, 0, 0, .2);
+  padding-left: 10px;
+  color: rgba(0, 0, 0, .7);
+}
+
+.quote-author{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.generate-button{
+  background-color: #8540b4;
+  padding: 10px 20px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 10px;
 }
