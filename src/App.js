@@ -21,7 +21,7 @@ function App() {
   }, [])
 
   if (isLoading) {
-    return <p>Loading..</p>
+    return <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
   }
 
   return (
