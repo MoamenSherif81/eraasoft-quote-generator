@@ -16,6 +16,10 @@ function App() {
       })
   }
 
+  const shareToWhatsapp = () => {
+    window.open(`https://api.whatsapp.com/send?text=${quote.content}  (${quote.author})`)
+  }
+
   useEffect(() => {
     generateQuote()
   }, [])
@@ -32,6 +36,7 @@ function App() {
         <span className='quote-author'>{quote.author}</span>
       </div>
       <button className='generate-button' onClick={generateQuote}>Get Random Quote</button>
+      <button className='whatsapp-button' onClick={shareToWhatsapp}>Share to Whatsapp</button>
     </div>
   );
 }
